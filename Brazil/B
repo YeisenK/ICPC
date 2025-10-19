@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
+    long double alc, oth, chanAlc, chanOth, porce, days;
+    cin >> days >> alc >> oth >> chanAlc >> chanOth;
+    long double ap = alc - (days*chanAlc), op = oth - (days*chanOth);
+    cout << fixed << setprecision(10) << 100 * (ap / (ap + op));
+    return 0;
+}

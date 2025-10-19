@@ -35,7 +35,7 @@ long long gridTraveler(long long m, long long n) {
 int main() {
     cout << "GRID: "<< gridTraveler(6,3) << endl;
     cout << "GRID: "<< gridTraveler(3,3) << endl;
-    cout << "GRID: "<< gridTraveler(2,3) << endl;
+    cout << "GRID: "<< gridTraveler(2,3) << endl;   
     cout << "GRID: "<< gridTraveler(18,18) << endl;
 
 

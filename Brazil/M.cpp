@@ -22,9 +22,6 @@ int mini(vector<int> wall,int k, int m){
     return *min_element(wall.begin(), wall.end());
 }
 
-
-
-
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);

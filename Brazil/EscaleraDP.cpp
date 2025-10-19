@@ -13,6 +13,5 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout << "Formas: " << f(5);
-
     return 0;
 }
