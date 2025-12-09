@@ -14,8 +14,8 @@ long long fib(long long n) {
 
 
 int main() {
-    cout << "FIBONACCI: "<< fib(500) << endl;
-
+    cout << "FIBONACCI: "<< fib(50000) << endl;
+    
 }
 
 
