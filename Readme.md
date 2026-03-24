@@ -14,6 +14,8 @@ This repository serves as a training system for ICPC-level competitive programmi
 
 All source code is written in C++17, optimized for performance within time and memory constraints typical of ICPC problems.
 
+You can find more info on: https://blocsa.com/icpc/icpc.html
+
 **Contents:**
 
 - Solved problems from live contests and curated practice sets
@@ -27,12 +29,13 @@ All source code is written in C++17, optimized for performance within time and m
 
 ```
 ICPC/
-├── Problems 2025/       # Main training set — solved problems that got us to the 2025 Mexico Finals
-├── Problems 2026/       # Current year training problems
-├── Problemsets/         # Official and Unofficial contest problem sets
-├── Books/               # Reference books for theory and deep dives
-├── Guides - material/   # Notes, cheat sheets, and team notebooks
-└── Info/                # Contest rules and official documentation
+├── Problems 2025/                  # Main training set — solved problems that got us to the 2025 Mexico Finals
+├── Problems 2026/                  # Current year training problems
+├── Problemsets/                    # Official and Unofficial contest problem sets
+├── Books/                          # Reference books for theory and deep dives
+├── Guides - material/              # Notes, cheat sheets, and team notebooks
+├── Ready-to-use implementatios/    # Code that is already tailored to use in this kinds of problems
+└── Info/                           # Contest rules and official documentation
 ```
 
 ---
@@ -146,11 +149,34 @@ g++ -O2 -std=c++17 -o solution file.cpp
 
 Code in this repository follows three principles:
 
-1. **Speed** — solutions are optimized to pass strict time limits
-2. **Clarity under pressure** — readable enough to debug in a 5-hour contest window
-3. **Reusability** — templates and implementations are designed to plug in with minimal modification
-4. **Brute force** - Not recommended in all cases but certainly useful when the problem allows it
+1. Speed — solutions are optimized to pass strict time limits
+2. Clarity under pressure — readable enough to debug in a 5-hour contest window
+3. Reusability — templates and implementations are designed to plug in with minimal modification
+4. Brute force - Not recommended in all cases but certainly useful when the problem allows it
 ---
+## License
+
+MIT License
+
+Copyright (c) 2026 YeisenK
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Author
 
