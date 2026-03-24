@@ -15,16 +15,16 @@
 
 ## Overview
 
-This repository serves as a **personal training system for ICPC-level competitive programming**. It is not a simple problem archive — it is a structured environment designed to build speed, intuition, and algorithmic depth under contest conditions.
+This repository serves as a training system for ICPC-level competitive programming.
 
-All source code is written in **C++17**, optimized for performance within time and memory constraints typical of ICPC problems.
+All source code is written in C++17, optimized for performance within time and memory constraints typical of ICPC problems.
 
-**What you'll find here:**
+**Contents:**
 
 - Solved problems from live contests and curated practice sets
 - Reusable, contest-ready implementation templates
 - Algorithm implementations with clear structure
-- Reference material: books, notes, and ICPC-style notebooks
+- Reference material: books, notes, and ICPC notebooks
 
 ---
 
@@ -32,11 +32,11 @@ All source code is written in **C++17**, optimized for performance within time a
 
 ```
 ICPC/
-├── Problems 2025/       # Main training set — solved problems and practice
+├── Problems 2025/       # Main training set — solved problems that got us to the 2025 Mexico Finals
 ├── Problems 2026/       # Current year training problems
-├── Problemsets/         # Official contest problem sets (PDF)
+├── Problemsets/         # Official and Unofficial contest problem sets
 ├── Books/               # Reference books for theory and deep dives
-├── Guides - material/   # Notes, cheat sheets, and ICPC team notebooks
+├── Guides - material/   # Notes, cheat sheets, and team notebooks
 └── Info/                # Contest rules and official documentation
 ```
 
