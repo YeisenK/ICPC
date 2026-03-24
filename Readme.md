@@ -5,8 +5,6 @@
 **Structured training environment for ICPC-style programming contests**
 
 ![Language](https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=flat-square&logo=cplusplus)
-![Standard](https://img.shields.io/badge/Standard-ISO%20C%2B%2B17-blue?style=flat-square)
-![Focus](https://img.shields.io/badge/Focus-ICPC%20Preparation-orange?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
 </div>
