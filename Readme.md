@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚙️ ICPC — Competitive Programming
+# ICPC — Competitive Programming
 
 **Structured training environment for ICPC-style programming contests**
 
@@ -21,10 +21,10 @@ All source code is written in **C++17**, optimized for performance within time a
 
 **What you'll find here:**
 
-- ✅ Solved problems from live contests and curated practice sets
-- 📦 Reusable, contest-ready implementation templates
-- 🧠 Algorithm implementations with clear structure
-- 📚 Reference material: books, notes, and ICPC-style notebooks
+- Solved problems from live contests and curated practice sets
+- Reusable, contest-ready implementation templates
+- Algorithm implementations with clear structure
+- Reference material: books, notes, and ICPC-style notebooks
 
 ---
 
