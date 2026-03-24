@@ -144,14 +144,12 @@ g++ -O2 -std=c++17 -o solution file.cpp
 
 ## Design Philosophy
 
-> *"Practice is not the thing you do once you're good. It's the thing that makes you good."*
-
 Code in this repository follows three principles:
 
 1. **Speed** — solutions are optimized to pass strict time limits
 2. **Clarity under pressure** — readable enough to debug in a 5-hour contest window
 3. **Reusability** — templates and implementations are designed to plug in with minimal modification
-
+4. **Brute force** - Not recommended in all cases but certainly useful when the problem allows it
 ---
 
 ## Author
