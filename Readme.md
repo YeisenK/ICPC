@@ -1,93 +1,170 @@
-# ICPC — Competitive Programming
+<div align="center">
 
-Reference material and implementations for ICPC-style programming contests.
+# ⚙️ ICPC — Competitive Programming
+
+**Structured training environment for ICPC-style programming contests**
+
+![Language](https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=flat-square&logo=cplusplus)
+![Standard](https://img.shields.io/badge/Standard-ISO%20C%2B%2B17-blue?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-ICPC%20Preparation-orange?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+
+</div>
 
 ---
 
-## Description
+## Overview
 
-This repository contains a structured collection of resources for competitive programming,
-including problem solutions, reusable code templates, theoretical notes, and algorithm
-implementations. All source code is written in **C++17**.
+This repository serves as a **personal training system for ICPC-level competitive programming**. It is not a simple problem archive — it is a structured environment designed to build speed, intuition, and algorithmic depth under contest conditions.
+
+All source code is written in **C++17**, optimized for performance within time and memory constraints typical of ICPC problems.
+
+**What you'll find here:**
+
+- ✅ Solved problems from live contests and curated practice sets
+- 📦 Reusable, contest-ready implementation templates
+- 🧠 Algorithm implementations with clear structure
+- 📚 Reference material: books, notes, and ICPC-style notebooks
 
 ---
 
 ## Repository Structure
 
-| Directory | Contents |
-|-----------|----------|
-| `solutions/` | Problem solutions from online judges (Codeforces, UVa, SPOJ, etc.) |
-| `templates/` | Contest-ready code templates |
-| `algorithms/` | Standalone algorithm implementations |
-| `notes/` | Theoretical summaries and reference sheets |
+```
+ICPC/
+├── Problems 2025/       # Main training set — solved problems and practice
+├── Problems 2026/       # Current year training problems
+├── Problemsets/         # Official contest problem sets (PDF)
+├── Books/               # Reference books for theory and deep dives
+├── Guides - material/   # Notes, cheat sheets, and ICPC team notebooks
+└── Info/                # Contest rules and official documentation
+```
 
 ---
 
 ## Topics Covered
 
-### Graph Theory
-- Traversal: BFS, DFS
-- Shortest paths: Dijkstra, Bellman-Ford, Floyd-Warshall
-- Minimum spanning tree: Kruskal, Prim
-- Strongly connected components: Tarjan, Kosaraju
-- Network flow: Ford-Fulkerson, Dinic
+<details>
+<summary><strong>Graph Theory</strong></summary>
 
-### Dynamic Programming
-- Classical DP: knapsack, LCS, LIS
-- Tree DP
+- BFS / DFS (traversal, connectivity)
+- Dijkstra, Bellman-Ford, Floyd-Warshall (shortest paths)
+- Minimum Spanning Tree — Kruskal, Prim
+- Strongly Connected Components — Tarjan, Kosaraju
+- Network Flow — Ford-Fulkerson, Dinic's algorithm
+
+</details>
+
+<details>
+<summary><strong>Dynamic Programming</strong></summary>
+
+- Classical DP — Knapsack, LIS, LCS
 - Bitmask DP
+- Tree DP
 - Interval DP
 
-### Mathematics and Number Theory
-- Sieve of Eratosthenes
-- Fast exponentiation
-- Modular inverse
-- Combinatorics and binomial coefficients
-- Euclidean algorithm (GCD / LCM)
+</details>
 
-### Data Structures
-- Segment Tree and Fenwick Tree (BIT)
-- Disjoint Set Union (DSU)
-- Sparse Table
+<details>
+<summary><strong>Mathematics & Number Theory</strong></summary>
+
+- Sieve of Eratosthenes
+- Binary exponentiation (fast power)
+- Modular arithmetic and modular inverse
+- Combinatorics — nCr, factorials, Pascal's triangle
+- GCD / LCM via Euclidean algorithm
+
+</details>
+
+<details>
+<summary><strong>Data Structures</strong></summary>
+
+- Segment Tree (point / range updates)
+- Fenwick Tree (BIT)
+- Disjoint Set Union (DSU / Union-Find)
+- Sparse Table (RMQ)
 - Trie
 - Priority Queue
 
-### Computational Geometry
-- Cross and dot product
-- Polygon area
-- Convex Hull
-- Segment intersection
+</details>
 
-### Search and Sorting
-- Binary and ternary search
-- Merge Sort, Quick Sort
-- Two pointers and sliding window
+<details>
+<summary><strong>Computational Geometry</strong></summary>
+
+- Cross product / dot product
+- Convex hull (Graham scan, Jarvis march)
+- Polygon area (Shoelace formula)
+- Line and segment intersection
+
+</details>
+
+<details>
+<summary><strong>General Techniques</strong></summary>
+
+- Binary search / ternary search
+- Two pointers
+- Sliding window
+- Greedy strategies
+
+</details>
 
 ---
 
-## Compilation
+## Getting Started
+
+**Clone the repository:**
 
 ```bash
 git clone https://github.com/YeisenK/ICPC.git
 cd ICPC
 ```
 
+**Compile and run a solution:**
+
 ```bash
 g++ -O2 -std=c++17 -o solution file.cpp
 ./solution
 ```
 
-The flags `-O2 -std=c++17` are recommended for compatibility with standard online judges.
+**Recommended compilation flags:**
+
+| Flag | Purpose |
+|------|---------|
+| `-O2` | Optimization level 2 (contest standard) |
+| `-std=c++17` | ISO C++17 standard |
+| `-Wall` | Enable all warnings (useful during practice) |
+| `-DLOCAL` | Toggle local debug macros |
 
 ---
 
 ## Requirements
 
-- Compiler: `g++` with C++17 support or later
-- Platform: Linux, macOS, or Windows (MinGW)
+| Requirement | Detail |
+|-------------|--------|
+| Compiler | `g++` — GCC 9+ or Clang with C++17 support |
+| Platform | Linux · macOS · Windows (WSL or MinGW) |
+| IDE (optional) | VS Code with C/C++ extension |
+
+---
+
+## Design Philosophy
+
+> *"Practice is not the thing you do once you're good. It's the thing that makes you good."*
+
+Code in this repository follows three principles:
+
+1. **Speed** — solutions are optimized to pass strict time limits
+2. **Clarity under pressure** — readable enough to debug in a 5-hour contest window
+3. **Reusability** — templates and implementations are designed to plug in with minimal modification
 
 ---
 
 ## Author
 
-**YeisenK** — [github.com/YeisenK](https://github.com/YeisenK)
+<div align="center">
+
+**YeisenK**
+
+[![GitHub](https://img.shields.io/badge/GitHub-YeisenK-181717?style=flat-square&logo=github)](https://github.com/YeisenK)
+
+</div>
