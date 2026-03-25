@@ -42,57 +42,57 @@ ICPC/
 
 ## Topics Covered
 
-<h3>Graph Theory</h3>
-<ul>
-    <li>BFS / DFS (traversal, connectivity)</li>
-    <li>Dijkstra, Bellman-Ford, Floyd-Warshall (shortest paths)</li>
-    <li>Minimum Spanning Tree — Kruskal, Prim</li>
-    <li>Strongly Connected Components — Tarjan, Kosaraju</li>
-    <li>Network Flow — Ford-Fulkerson, Dinic's algorithm</li>
-</ul>
+**Graph Theory**
 
-<h3>Dynamic Programming</h3>
-<ul>
-    <li>Classical DP — Knapsack, LIS, LCS</li>
-    <li>Bitmask DP</li>
-    <li>Tree DP</li>
-    <li>Interval DP</li>
-</ul>
+- BFS / DFS (traversal, connectivity)
+- Dijkstra, Bellman-Ford, Floyd-Warshall (shortest paths)
+- Minimum Spanning Tree — Kruskal, Prim
+- Strongly Connected Components — Tarjan, Kosaraju
+- Network Flow — Ford-Fulkerson, Dinic's algorithm
 
-<h3>Mathematics & Number Theory</h3>
-<ul>
-    <li>Sieve of Eratosthenes</li>
-    <li>Binary exponentiation (fast power)</li>
-    <li>Modular arithmetic and modular inverse</li>
-    <li>Combinatorics — nCr, factorials, Pascal's triangle</li>
-    <li>GCD / LCM via Euclidean algorithm</li>
-</ul>
 
-<h3>Data Structures</h3>
-<ul>
-    <li>Segment Tree (point / range updates)</li>
-    <li>Fenwick Tree (BIT)</li>
-    <li>Disjoint Set Union (DSU / Union-Find)</li>
-    <li>Sparse Table (RMQ)</li>
-    <li>Trie</li>
-    <li>Priority Queue</li>
-</ul>
+**Dynamic Programming**
 
-<h3>Computational Geometry</h3>
-<ul>
-    <li>Cross product / dot product</li>
-    <li>Convex hull (Graham scan, Jarvis march)</li>
-    <li>Polygon area (Shoelace formula)</li>
-    <li>Line and segment intersection</li>
-</ul>
+- Classical DP — Knapsack, LIS, LCS
+- Bitmask DP
+- Tree DP
+- Interval DP
 
-<h3>General Techniques</h3>
-<ul>
-    <li>Binary search / ternary search</li>
-    <li>Two pointers</li>
-    <li>Sliding window</li>
-    <li>Greedy strategies</li>
-</ul>
+
+**Mathematics & Number Theory**
+
+- Sieve of Eratosthenes
+- Binary exponentiation (fast power)
+- Modular arithmetic and modular inverse
+- Combinatorics — nCr, factorials, Pascal's triangle
+- GCD / LCM via Euclidean algorithm
+
+
+**Data Structures**
+
+- Segment Tree (point / range updates)
+- Fenwick Tree (BIT)
+- Disjoint Set Union (DSU / Union-Find)
+- Sparse Table (RMQ)
+- Trie
+- Priority Queue
+
+
+**Computational Geometry**
+
+- Cross product / dot product
+- Convex hull (Graham scan, Jarvis march)
+- Polygon area (Shoelace formula)
+- Line and segment intersection
+
+
+**General Techniques**
+
+- Binary search / ternary search
+- Two pointers
+- Sliding window
+- Greedy strategies
+
 
 ---
 
