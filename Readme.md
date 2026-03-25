@@ -42,7 +42,7 @@ ICPC/
 
 ## Topics Covered
 
-<h2>Graph Theory</h2>
+<h3>Graph Theory</h3>
 <ul>
     <li>BFS / DFS (traversal, connectivity)</li>
     <li>Dijkstra, Bellman-Ford, Floyd-Warshall (shortest paths)</li>
@@ -51,7 +51,7 @@ ICPC/
     <li>Network Flow — Ford-Fulkerson, Dinic's algorithm</li>
 </ul>
 
-<h2>Dynamic Programming</h2>
+<h3>Dynamic Programming</h3>
 <ul>
     <li>Classical DP — Knapsack, LIS, LCS</li>
     <li>Bitmask DP</li>
@@ -59,7 +59,7 @@ ICPC/
     <li>Interval DP</li>
 </ul>
 
-<h2>Mathematics & Number Theory</h2>
+<h3>Mathematics & Number Theory</h3>
 <ul>
     <li>Sieve of Eratosthenes</li>
     <li>Binary exponentiation (fast power)</li>
@@ -68,7 +68,7 @@ ICPC/
     <li>GCD / LCM via Euclidean algorithm</li>
 </ul>
 
-<h2>Data Structures</h2>
+<h3>Data Structures</h3>
 <ul>
     <li>Segment Tree (point / range updates)</li>
     <li>Fenwick Tree (BIT)</li>
@@ -78,7 +78,7 @@ ICPC/
     <li>Priority Queue</li>
 </ul>
 
-<h2>Computational Geometry</h2>
+<h3>Computational Geometry</h3>
 <ul>
     <li>Cross product / dot product</li>
     <li>Convex hull (Graham scan, Jarvis march)</li>
@@ -86,7 +86,7 @@ ICPC/
     <li>Line and segment intersection</li>
 </ul>
 
-<h2>General Techniques</h2>
+<h3>General Techniques</h3>
 <ul>
     <li>Binary search / ternary search</li>
     <li>Two pointers</li>
