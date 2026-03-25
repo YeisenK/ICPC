@@ -108,8 +108,8 @@ cd ICPC
 **Compile and run a solution:**
 
 ```bash
-g++ -O2 -std=c++17 -o solution file.cpp
-./solution
+g++ solution_file.cpp -o solution_file 
+./solution_file
 ```
 
 **Recommended compilation flags:**
