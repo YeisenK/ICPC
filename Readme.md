@@ -34,7 +34,7 @@ ICPC/
 ├── Problemsets/                    # Official and Unofficial contest problem sets
 ├── Books/                          # Reference books for theory and deep dives
 ├── Guides - material/              # Notes, cheat sheets, and team notebooks
-├── Ready-to-use implementatios/    # Code that is already tailored to use in this kinds of problems
+├── Ready-to-use implementations/   # Code that is tailored especifically to use in this kinds of problems
 └── Info/                           # Contest rules and official documentation
 ```
 
