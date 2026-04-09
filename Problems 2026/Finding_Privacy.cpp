@@ -19,14 +19,12 @@ void solve() {
     }
     
     string res(n, '-');
-    //Se hace un analissi matematico y ese es el resultado que dan las ecuacuiones
     // l  +  K  +  2a  +  b  +  r  =  N
     // a + b = K - 1
     // a = N - 2K + 1 - l - r
-    // b = (K-1) - a
-    // En base a eso se hace el siguiente codigo considerando todos los posibles casos
-    for(int l = 0; l <= 1; l++){ //l es left yrepresenta la esquina izquierda, que solo puede ser 'X' o "-X"
-        for(int r = 0; r <= 1; r++){ // lo mismo con la derecha, arriba España
+    // b =1 (K-1) - a
+    for(int l = 0; l <= 1; l++){ //l es left y representa la esquina izquierda, que solo puede ser 'X' o "-X"
+        for(int r = 0; r <= 1; r++){ // lo mismo con la derecha (arriba España).
             int a = n - (2*k) +1 - l -r;
             int b = (k-1) - a;
             if(a >= 0 && b >= 0){ 
