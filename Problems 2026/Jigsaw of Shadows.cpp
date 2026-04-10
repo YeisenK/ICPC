@@ -1,27 +1,79 @@
 //Codeforces
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define endl '\n'
-// const int MOD = 1e9+7;
-// const ll INF = 1e18;
-
-void solve() {
-
-    
-
-}
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    
-    int t = 1;
-    while (t--) {
-        solve();
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int t, n;
+    // Leemos hasta EOF por si el juez manda múltiples casos
+    while (scanf("%d %d", &t, &n) == 2) {
+        vector<pair<int, int>> HnX(n); // Guardamos X y H como enteros para que el sort sea más rápido
+        for (int i = 0; i < n; i++) {
+            scanf("%d %d", &HnX[i].first, &HnX[i].second);
+        }
+        sort(HnX.begin(), HnX.end()); // Ordenamos por posición X
+        const double PI = acos(-1.0);
+        // cot(θ) = cos(θ)/sin(θ) = 1/tan(θ), longitud de sombra = H * cot(θ)
+        const double cot = cos(t * PI / 180.0) / sin(t * PI / 180.0);
+        double r = 0, rightmost = 0; // rightmost rastrea hasta dónde llega la unión de sombras
+        for (int i = 0; i < n; i++) {
+            double end = HnX[i].first + HnX[i].second * cot; // Fin de la sombra del sujeto i
+            // Solo sumamos si la sombra se extiende más allá de lo ya cubierto
+            if (end > rightmost) {
+                // max(rightmost, x) maneja ambos casos: sin overlap (x >= rightmost)
+                // y overlap parcial (x < rightmost) en una sola expresión
+                r += end - max(rightmost, (double)HnX[i].first);
+                rightmost = end;
+            }
+            // Si end <= rightmost, la sombra está completamente cubierta, no sumamos nada
+        }
+        printf("%.10f\n", r);
     }
     return 0;
 }
+
+/*
+ * Primera Versión
+*int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    ll t, n;
+    double r = 0, rigthmost;
+    cin >> t >> n;
+    vector<pair<double, double>> HnX(n);
+    for (int i = 0; i < n; i++) {
+        cin >> HnX[i].first >> HnX[i].second;
+    }
+    sort(HnX.begin(), HnX.end());
+    const double tt = tan(t*(PI/180.0)); // Tangente de teta es una constante y hay que convertir angulos a rad
+    rigthmost = HnX[0].first;
+    for (int i = 0; i < n; i++) {
+        double l = HnX[i].second/tt, end = HnX[i].first + l;// Calculamos la longitud
+        if (HnX[i].first >= rigthmost){ // No hay superposici�n, sumamos la sombra completa
+            r += end - HnX[i].first;
+            rigthmost = end;
+        }else if (HnX[i].first < rigthmost && end > rigthmost){ // Superposici�n parcial, solo sumamos lo que sobresale
+            r+= end - rigthmost;
+            rigthmost = end;
+        } // Si end <= rigthmost la sombra est� completamente cubierta, no sumamos nada
+    }
+    cout << fixed << setprecision(10) << r << endl; // para imprimir 5 decimales
+    return 0;
+}
+ * ¿Por qué la versión anterior daba TLE?
+ *
+ * 1. Lectura hasta EOF: el juez probablemente manda múltiples casos de prueba
+ *    pegados en la entrada. La versión anterior solo leía uno y terminaba,
+ *    causando que el juez esperara indefinidamente → TLE.
+ *
+ * 2. cin/cout vs scanf/printf: cout con fixed + setprecision puede ser
+ *    significativamente más lento que printf, especialmente con muchas salidas.
+ *
+ * 3. pair<double,double> vs pair<int,int>: ordenar doubles es más costoso
+ *    que ordenar enteros. Como X y H son enteros, no hay razón para guardarlos
+ *    como double antes del cálculo.
+ */
 
 /*
  * Problem Description:

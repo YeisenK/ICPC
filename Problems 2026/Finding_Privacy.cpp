@@ -24,7 +24,7 @@ void solve() {
     // a = N - 2K + 1 - l - r
     // b =1 (K-1) - a
     for(int l = 0; l <= 1; l++){ //l es left y representa la esquina izquierda, que solo puede ser 'X' o "-X"
-        for(int r = 0; r <= 1; r++){ // lo mismo con la derecha (arriba España).
+        for(int r = 0; r <= 1; r++){ // lo mismo con la derecha, arriba España
             int a = n - (2*k) +1 - l -r;
             int b = (k-1) - a;
             if(a >= 0 && b >= 0){ 
@@ -43,12 +43,11 @@ void solve() {
             }
         }
     }
-    return;
-}
+    }
 
 int main() {
-    ios::sync_with_stdio(0);
-    cin.tie(0);
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
     
     int t = 1;
     while (t--) {
